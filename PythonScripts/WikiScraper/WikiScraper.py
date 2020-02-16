@@ -1,4 +1,5 @@
 import wikipedia
+import os
 import random
 q = open("quelle.txt", "a", encoding="utf-8")
 wikipedia.set_lang("de")
@@ -17,3 +18,4 @@ with open("quelle.txt", "r", encoding="utf-8") as s:
 f.close()
 q.close()
 open("quelle.txt", "w").close()
+os.remove("quelle.txt")
